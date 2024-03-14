@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Lab 3</title>
+		<link rel="stylesheet" href="css/mystyle.css" />
+		<script type="text/javascript" src="java/functions.js"></script>
+		<style>
+		</style>
+	</head>
+	<body bgcolor="orange"> 
+	<h1 align="center">Online Store </h1>
+
+	<ul>
+	<center>
+		<li class="menu-item"><a href="#" class="drp">Services</a>
+			<div class="menu-content">
+				<a href="add_book.php">Reparations</a><br>
+				<a href="remove_book.php">Client support</a><br>
+				<a href="display_books.php">Consults</a><br>
+			</div>
+		</li>
+
+		<li class="menu-item"><a href="#" class="drp">Know About us</a>
+			<div class="menu-content">
+				<a href="add_book.php">Our History</a><br>
+				<a href="remove_book.php">Mission</a><br>
+				<a href="display_books.php">Vision</a><br>
+			</div>
+		</li>
+
+		<li class="menu-item"><a href="#" class="drp">Laptops</a>
+			<div class="menu-content">
+				<a href="add_book.php">Laptops high gamma</a><br>
+				<a href="remove_book.php">Laptops medium gamma</a><br>
+				<a href="display_books.php">Laptop low gamma</a><br>
+			</div>
+		</li>
+
+		<li class="menu-item"><a href="#" class="drp">Desktop PC</a>
+			<div class="menu-content">
+				<a href="add_book.php">Build your own</a><br>
+				<a href="remove_book.php">Pre assamble pc's</a><br>
+				<a href="display_books.php">MAC</a><br>
+			</div>
+		</li>
+		<li class="menu-item"><a href="#" class="drp">Smartphones</a>	
+			<div class="menu-content">
+				<a href="add_user.php">Samsung</a><br>
+				<a href="remove_user.php">Iphone</a><br>
+				<a href="display_users.php">Redmagic</a><br>
+			</div>
+		</li>
+	</center>
+	</ul>
+		<p align="center"> Welcome to my Online Store <p>
+		    <table align="center">
+		        <tr>
+		            <td align="center" class="block">
+            			<a href="javascript:void(0)" onclick="popupfunction('1')" class="linktext">
+                		<img src="img/testing1.jpg" width="30%"><br><br>ASUS ROG Strix G16
+            			</a>
+            			<br><br>Price:$500<br>Rating: 5<br><br>
+            			<button id="add1" onclick="addItem('ASUS ROG')"> Add to cart</button>
+        			</td>
+
+		            <td align="center" class="block">
+		               	<a href="javascript:void(0)" onclick="popupfunction('2')" class="linktext">
+		               	<br>
+		               	<img src="img/testing2.jpg" width=30%><br><br>Lenovo V15 Gen 4 </a>
+		               	<br><br>Price:$560<br>Rating: 4.5<br><br>
+            			<button id="add2" onclick="addItem('Lenovo V15')"> Add to cart</button>
+		            </td>
+
+		            <td align="center" class="block">
+		               	<a href="javascript:void(0)" onclick="popupfunction('3')" class="linktext">
+		               	<br>
+		               	<img src="img/testing3.jpg" width=30%><br><br>HP Victus 15 Gaming Laptop</a>
+		               	<br><br>Price:$600<br>Rating: 4.9<br><br>
+            			<button id="add3" onclick="addItem('HP Victus')"> Add to cart</button>
+		            </td>
+
+		        </tr>
+		        <tr>
+		        	<td align="center" class="block">
+		               	<a href="javascript:void(0)" onclick="popupfunction('4')" class="linktext">
+		               	<br>
+		               	<img src="img/testing4.jpg" width=30%><br><br>HP Flagship 15.6 HD Laptop</a>
+		               	<br><br>Price:$660<br>Rating: 4.4<br><br>
+            			<button id="add4" onclick="addItem('HP Flagship')"> Add to cart</button>
+		            </td>
+
+		            <td align="center" class="block">
+		               	<a href="javascript:void(0)" onclick="popupfunction('5')" class="linktext">
+		               	<br>
+		               	<img src="img/testing5.jpg" width=30%><br><br>Alienware X16 R1 Gaming Laptop</a>
+		               	<br><br>Price:$460<br>Rating: 5<br><br>
+            			<button id="add5" onclick="addItem('Alienware X16')"> Add to cart</button>
+		            </td>
+
+		            <td align="center" class="block">
+		               	<a href="javascript:void(0)" onclick="popupfunction('6')" class="linktext">
+		               	<br>
+		               	<img src="img/testing6.jpg" width=30%><br><br>Lenovo IdeaPad 1 15.6</a>
+		               	<br><br>Price:$490<br>Rating: 4.8<br><br>
+            			<button onclick="addItem('Lenovo IdeaPad')"> Add to cart</button>
+		            </td>
+
+		        </tr>
+		    </table>
+
+		    <div id="popup1" class="white_content" align="center">
+		    	<img src="img/testing1.jpg" width=30%>
+		    	<a href="javascript:void(0)" onclick="popupclose('1')" class="linktext">
+		    	<br>Close this window</a>
+		        <br><br>Price:$500<br>Rating: 5<br>
+		   	</div>
+		    
+		    <div id="popup2" class="white_content" align="center">
+		    	<img src="img/testing2.jpg" width=50% height="50%">
+		    	<a href="javascript:void(0)" onclick="popupclose('2')" class="linktext">
+		    	<br>Close this window</a>
+		        <br>Price:$560<br>Rating: 4.5<br>
+		    </div>
+
+		    <div id="popup3" class="white_content" align="center">
+		    	<img src="img/testing3.jpg" width=30%>
+		    	<a href="javascript:void(0)" onclick="popupclose('3')" class="linktext">
+		    	<br>Close this window</a>
+		    	<br>Price:$600<br>Rating: 4.9<br>
+		   	</div>
+		    
+		    <div id="popup4" class="white_content" align="center">
+		    	<img src="img/testing4.jpg" width=30% align="center">
+		    	<a href="javascript:void(0)" onclick="popupclose('4')" class="linktext">
+		    	<br>Close this window</a>
+		    	<br>Price:$660<br>Rating: 4.4<br>
+		    </div>
+
+		    <div id="popup5" class="white_content" align="center">
+		    	<img src="img/testing5.jpg" width=30%>
+		    	<a href="javascript:void(0)" onclick="popupclose('5')" class="linktext">
+		    	<br>Close this window</a>
+		    	<br>Price:$460<br>Rating: 5<br>
+		   	</div>
+		    
+		    <div id="popup6" class="white_content" align="center"> 
+		    	<img src="img/testing6.jpg" width=30%>
+		    	<a href="javascript:void(0)" onclick="popupclose('6')" class="linktext">
+		    	<br>Close this window</a>
+		    	<br>Price:$490<br>Rating: 4.8<br>
+		    </div>
+
+		    <div id="cart" class="cartImg">
+		    	<img id="cart" src="img/cart.png" width="40px" onclick="popupfunction('7')">
+		    </div>
+
+		    <div id="popup7" class="display_cart" align="center"> 
+		    	<img src="img/cart.png" width=30%>
+		    	<a href="javascript:void(0)" onclick="popupclose('7')" class="linktext"><br>Close the preview</a>
+		    	<br><br>
+		    	<label>Your products:</label>
+		    	<label id="addedItem"></label>
+		    	<br><br>
+				<label id="productsLabel" name="productsList"></label>
+		    	<br><br>
+
+
+		    </div>
+
+
+
+
+
+	</center>
+</body>
+</html>
+
+
